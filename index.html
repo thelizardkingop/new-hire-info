@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome New Hires</title>
+    <title>Info for New Hires</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f7fa;
             color: #333;
             padding: 40px;
-            text-align: center;
+            text-align: left;
         }
         h1 {
             color: #2c3e50;
+            text-align: center;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
             margin-bottom: 30px;
         }
         .button {
+            display: inline-block;
             background-color: #3498db;
             color: white;
-            padding: 15px 25px;
+            padding: 12px 20px;
             text-decoration: none;
             border-radius: 6px;
             font-size: 1em;
@@ -32,8 +44,26 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to the Team!</h1>
-    <p>We're excited to have you join us. Click below to download your New Hire Pack and get started with onboarding.</p>
-    <a class="button" href="new-hire-pack.zip" download>Download New Hire Pack</a>
+    <h1>Info for New Hires</h1>
+
+    <div class="section">
+        <p><strong>JIRA:</strong> Put in a ticket for Teams access, VPN access, and Share Drive access.</p>
+        <p><a href="https://servicedesk.jt4llc.com/servicedesk/customer/user/login?destination=portals" target="_blank">Access the Service Desk</a></p>
+    </div>
+
+    <div class="section">
+        <p><strong>JT4 Employee Home Page:</strong></p>
+        <p><a href="https://www.jt4llc.com/employees/" target="_blank">https://www.jt4llc.com/employees/</a></p>
+    </div>
+
+    <div class="section">
+        <p><strong>WiFi:</strong> JT4 Guest</p>
+        <p><strong>Password:</strong> SpaceballsTheMovie</p>
+    </div>
+
+    <div class="section">
+        <p><strong>GOV Email:</strong></p>
+        <a class="button" href="https://webmail.apps.mil/mail/" target="_blank">Access Webmail</a>
+    </div>
 </body>
 </html>
