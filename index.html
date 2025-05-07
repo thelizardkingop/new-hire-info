@@ -7,11 +7,40 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: white;
             color: #333;
             padding: 40px 40px 40px 200px; /* Padding left to accommodate nav */
             text-align: center;
+            position: relative;
+        }
+
+        .corner {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background: url('background.jpg') no-repeat center center;
+            background-size: contain;
+            z-index: -1;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
         }
 
         .nav {
@@ -74,11 +103,19 @@
     </style>
 </head>
 <body>
+    <!-- Corner Images -->
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <!-- Navigation -->
     <div class="nav">
         <a href="/new-hire-info/index.html">New Hire Info</a>
         <a href="/new-hire-info/sonic-boom.html">AVD Signup</a>
     </div>
 
+    <!-- Main Content -->
     <h1>Info for New Hires</h1>
 
     <div class="section">
