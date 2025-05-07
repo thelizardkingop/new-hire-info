@@ -16,7 +16,7 @@
         }
         p {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .button {
             background-color: #3498db;
@@ -26,20 +26,16 @@
             border-radius: 6px;
             font-size: 1em;
             display: inline-block;
-            margin: 10px 0;
+            margin: 10px 10px;
         }
         .button:hover {
             background-color: #2980b9;
         }
         .section {
-            margin-bottom: 40px;
-            text-align: left;
+            margin-bottom: 30px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-        }
-        .section a {
-            font-size: 1.1em;
         }
     </style>
 </head>
@@ -48,12 +44,12 @@
 
     <div class="section">
         <p><strong>JIRA:</strong> Put in a ticket for Teams access, VPN access, and Share Drive access.</p>
-        <p><a href="https://servicedesk.jt4llc.com/servicedesk/customer/user/login?destination=portals" target="_blank">Access the Service Desk</a></p>
+        <a class="button" href="https://servicedesk.jt4llc.com/servicedesk/customer/user/login?destination=portals" target="_blank">Access the Service Desk</a>
     </div>
 
     <div class="section">
         <p><strong>JT4 Employee Home Page:</strong></p>
-        <p><a href="https://www.jt4llc.com/employees/" target="_blank">https://www.jt4llc.com/employees/</a></p>
+        <a class="button" href="https://www.jt4llc.com/employees/" target="_blank">JT4 Employee Page</a>
     </div>
 
     <div class="section">
@@ -66,7 +62,9 @@
         <a class="button" href="https://webmail.apps.mil/mail/" target="_blank">Access Webmail</a>
     </div>
 
-    <p>We're excited to have you join us. Click below to download your New Hire Pack and get started with onboarding.</p>
-    <a class="button" href="new-hire-pack.zip" download>Download New Hire Pack</a>
+    <div class="section">
+        <p>We're excited to have you join us. Click below to download your New Hire Pack and get started with onboarding.</p>
+        <a class="button" href="new-hire-pack.zip" download>Download New Hire Pack</a>
+    </div>
 </body>
 </html>
