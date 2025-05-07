@@ -10,12 +10,37 @@
             background: url('background.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
-            padding: 40px;
+            padding: 40px 40px 40px 200px; /* Padding left to accommodate nav */
             text-align: center;
         }
+
+        .nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 180px;
+            background-color: rgba(44, 62, 80, 0.95);
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+        }
+
+        .nav a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #2980b9;
+        }
+
         h1 {
             color: #2c3e50;
         }
+
         p {
             font-size: 1.2em;
             margin-bottom: 20px;
@@ -24,6 +49,7 @@
             padding: 10px 20px;
             border-radius: 8px;
         }
+
         .button {
             background-color: #3498db;
             color: white;
@@ -34,9 +60,11 @@
             display: inline-block;
             margin: 10px 10px;
         }
+
         .button:hover {
             background-color: #2980b9;
         }
+
         .section {
             margin-bottom: 30px;
             max-width: 800px;
@@ -46,6 +74,11 @@
     </style>
 </head>
 <body>
+    <div class="nav">
+        <a href="index.html">New Hire Info</a>
+        <a href="sonic-boom-checklist.html">AVD Signup</a>
+    </div>
+
     <h1>Info for New Hires</h1>
 
     <div class="section">
@@ -71,11 +104,6 @@
     <div class="section">
         <p>We're excited to have you join us. Click below to download your New Hire Pack and get started with onboarding.</p>
         <a class="button" href="new-hire-pack.zip" download>Download New Hire Pack</a>
-    </div>
-
-    <div class="section">
-        <p><strong>Sonic Boom AVD Signup:</strong></p>
-        <a class="button" href="sonic-boom-checklist.html">Go to AVD Signup Instructions</a>
     </div>
 </body>
 </html>
